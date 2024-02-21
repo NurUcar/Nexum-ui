@@ -1,0 +1,39 @@
+{
+    
+    "env": {
+      "jest": true,
+      "browser": true
+    },
+  
+    
+    "root": true,
+  
+    "parser": "@typescript-eslint/parser",
+  
+    "plugins": ["@typescript-eslint", "unused-imports"],
+  
+    // Extend various ESLint configurations and plugins
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "prettier",
+      "plugin:prettier/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:storybook/recommended"
+    ],
+    "rules": {
+        "unused-imports/no-unused-imports-ts": 2,
+        "unused-imports/no-unused-imports": "warn",
+        "unused-imports/no-unused-vars": "warn",
+        "no-useless-escape": "off",
+        "no-empty-pattern": "off",
+        "no-irregular-whitespace": "off",
+        "no-mixed-spaces-and-tabs": "off",
+        "no-empty": "off",
+        "no-var": "off",
+        "no-constant-condition": "off",
+        "@next/next/no-img-element": "off"
+    }
+  }
